@@ -16,25 +16,22 @@ This project is a REST API backend for a dosa restaurant. It provides CRUD (Crea
 
 Clone the repository:
 
-'''python
 git clone <repository_url>
 
 ## Install dependencies:
 
-```python
+
 pip install fastapi
 
-```python
 install fastapi uvicorn
 
-```python
 pip install pydantic
+
 
 ## Database Initialization:
 
 To initialize the SQLite database with sample data:
 
-```python
 python db_init.py
 
 This script creates tables for customers, items, and orders, and populates them with data from 'example_orders.json'.
@@ -43,7 +40,6 @@ This script creates tables for customers, items, and orders, and populates them 
 
 To start the FastAPI application:
 
-```css
 uvicorn main:app --reload
 
 The API will be available at ##http://localhost:8000.
