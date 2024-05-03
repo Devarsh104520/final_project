@@ -16,21 +16,22 @@ This project is a REST API backend for a dosa restaurant. It provides CRUD (Crea
 
 1.Clone the repository:
   
-  'git clone <repository_url>'
+  `git clone <repository_url>`
 
 2.Install dependencies:
-  'pip install fastapi'
   
-  'pip install uvicorn'
+  `pip install fastapi`
   
-  'pip install pydantic'
+  `pip install uvicorn`
+  
+  `pip install pydantic`
 
 
 ## Database Initialization:
 
 To initialize the SQLite database with sample data:
 
-'python db_init.py'
+`python db_init.py`
 
 This script creates tables for customers, items, and orders, and populates them with data from 'example_orders.json'.
 
@@ -38,34 +39,41 @@ This script creates tables for customers, items, and orders, and populates them 
 
 To start the FastAPI application:
 
-'uvicorn main:app --reload'
+`uvicorn main:app --reload`
 
-The API will be available at ##http://localhost:8000.
+The API will be available at `http://localhost:8000.`
 
 ## API Endpoints
-```python
 
 Customers:
 
 -POST /customers/: Create a new customer.
+
 -GET /customers/{cust_id}: Retrieve a customer by ID.
+
 -PUT /customers/{cust_id}: Update a customer by ID.
+
 -DELETE /customers/{cust_id}: Delete a customer by ID.
 
 Items:
 
 -POST /items/: Create a new item.
+
 -GET /items/{item_id}: Retrieve an item by ID.
+
 -PUT /items/{item_id}: Update an item by ID.
+
 -DELETE /items/{item_id}: Delete an item by ID.
 
 Orders:
 
 -POST /orders/: Create a new order.
--GET /orders/{order_id}: Retrieve an order by ID.
--PUT /orders/{order_id}: Update an order by ID.
--DELETE /orders/{order_id}: Delete an order by ID.
 
+-GET /orders/{order_id}: Retrieve an order by ID.
+
+-PUT /orders/{order_id}: Update an order by ID.
+
+-DELETE /orders/{order_id}: Delete an order by ID.
 
 ## Usage:
 
