@@ -4,7 +4,7 @@ This project is a REST API backend for a dosa restaurant. It provides CRUD (Crea
 
 ## Project Structure:
 
--db_init.py: Script to initialize an empty SQLite database with relational constraints based on the provided example_orders.json file.
+-db_init.py: Script to initialize an empty SQLite database with relational constraints based on the provided 'example_orders.json' file.
 
 -main.py: FastAPI application implementing endpoints for CRUD operations on customers, items, and orders.
 
@@ -14,25 +14,23 @@ This project is a REST API backend for a dosa restaurant. It provides CRUD (Crea
 
 ## Installation and Setup:
 
-Clone the repository:
+1.Clone the repository:
+  
+  'git clone <repository_url>'
 
-git clone <repository_url>
-
-## Install dependencies:
-
-
-pip install fastapi
-
-install fastapi uvicorn
-
-pip install pydantic
+2.Install dependencies:
+  'pip install fastapi'
+  
+  'pip install uvicorn'
+  
+  'pip install pydantic'
 
 
 ## Database Initialization:
 
 To initialize the SQLite database with sample data:
 
-python db_init.py
+'python db_init.py'
 
 This script creates tables for customers, items, and orders, and populates them with data from 'example_orders.json'.
 
@@ -40,7 +38,7 @@ This script creates tables for customers, items, and orders, and populates them 
 
 To start the FastAPI application:
 
-uvicorn main:app --reload
+'uvicorn main:app --reload'
 
 The API will be available at ##http://localhost:8000.
 
@@ -67,6 +65,7 @@ Orders:
 -GET /orders/{order_id}: Retrieve an order by ID.
 -PUT /orders/{order_id}: Update an order by ID.
 -DELETE /orders/{order_id}: Delete an order by ID.
+
 
 ## Usage:
 
