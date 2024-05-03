@@ -1,8 +1,8 @@
-##Dosa Restaurant REST API Backend:
+## Dosa Restaurant REST API Backend:
 
 This project is a REST API backend for a dosa restaurant. It provides CRUD (Create, Read, Update, Delete) operations for three main objects: customers, items, and orders. The backend is built using FastAPI and uses an SQLite database to store and retrieve data.
 
-##Project Structure:
+## Project Structure:
 
 -db_init.py: Script to initialize an empty SQLite database with relational constraints based on the provided example_orders.json file.
 
@@ -12,43 +12,43 @@ This project is a REST API backend for a dosa restaurant. It provides CRUD (Crea
 
 -db.sqlite: SQLite database file where data is stored.
 
-##Installation and Setup:
+## Installation and Setup:
 
 Clone the repository:
 
 '''python
 git clone <repository_url>
 
-##Install dependencies:
+## Install dependencies:
 
-'''python
+```python
 pip install fastapi
 
-'''python
+```python
 install fastapi uvicorn
 
-'''python
+```python
 pip install pydantic
 
-##Database Initialization:
+## Database Initialization:
 
 To initialize the SQLite database with sample data:
 
-'''python
+```python
 python db_init.py
 
 This script creates tables for customers, items, and orders, and populates them with data from 'example_orders.json'.
 
-##Running the FastAPI Application:
+## Running the FastAPI Application:
 
 To start the FastAPI application:
 
-'''css
+```css
 uvicorn main:app --reload
 
 The API will be available at ##http://localhost:8000.
 
-##API Endpoints
+## API Endpoints
 
 Customers:
 
@@ -71,7 +71,7 @@ Orders:
 -PUT /orders/{order_id}: Update an order by ID.
 -DELETE /orders/{order_id}: Delete an order by ID.
 
-##Usage:
+## Usage:
 
 Use any HTTP client (e.g., Postman, curl) to interact with the API endpoints.
 
