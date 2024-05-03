@@ -14,7 +14,7 @@ This project is a REST API backend for a dosa restaurant. It provides CRUD (Crea
 
 ## Installation and Setup:
 
-1.Clone the repository:
+1.Clone the repository: 
   
   `git clone <repository_url>`
 
@@ -79,4 +79,4 @@ Orders:
 
 Use any HTTP client (e.g., Postman, curl) to interact with the API endpoints.
 
-Refer to the API documentation or OpenAPI schema (http://localhost:8000/docs) for detailed usage instructions.
+Refer to the API documentation or OpenAPI schema (`http://localhost:8000/docs`) for detailed usage instructions.
